@@ -10,8 +10,8 @@ import UIKit
 
 class StoryViewController: UIViewController {
     
-    var story: Story!
     var words: String?
+    var name: String?
     
     @IBOutlet weak var storyName: UILabel!
 
@@ -20,9 +20,9 @@ class StoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         // Do any additional setup after loading the view.
+        storyName.text = name! + " story"
+        
         storyField.text = words
     }
 

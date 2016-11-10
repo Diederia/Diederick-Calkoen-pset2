@@ -15,6 +15,11 @@
 		E92240C21DD07B93001C7BD7 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92240C11DD07B93001C7BD7 /* inputViewController.swift */; };
 		E92240C41DD0DB99001C7BD7 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92240C31DD0DB99001C7BD7 /* StoryViewController.swift */; };
 		E92240C61DD0E3A7001C7BD7 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92240C51DD0E3A7001C7BD7 /* Story.swift */; };
+		E945859F1DD3267100286B90 /* madlib0.txt in Resources */ = {isa = PBXBuildFile; fileRef = E945859A1DD3267100286B90 /* madlib0.txt */; };
+		E94585A01DD3267100286B90 /* madlib1.txt in Resources */ = {isa = PBXBuildFile; fileRef = E945859B1DD3267100286B90 /* madlib1.txt */; };
+		E94585A11DD3267100286B90 /* madlib2.txt in Resources */ = {isa = PBXBuildFile; fileRef = E945859C1DD3267100286B90 /* madlib2.txt */; };
+		E94585A21DD3267100286B90 /* madlib3.txt in Resources */ = {isa = PBXBuildFile; fileRef = E945859D1DD3267100286B90 /* madlib3.txt */; };
+		E94585A31DD3267100286B90 /* madlib4.txt in Resources */ = {isa = PBXBuildFile; fileRef = E945859E1DD3267100286B90 /* madlib4.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		E92240C11DD07B93001C7BD7 /* inputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
 		E92240C31DD0DB99001C7BD7 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		E92240C51DD0E3A7001C7BD7 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../../../../Downloads/madlibs_ios/Story.swift; sourceTree = "<group>"; };
+		E945859A1DD3267100286B90 /* madlib0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib0.txt; path = ../../../../Downloads/madlibs_ios/madlib0.txt; sourceTree = "<group>"; };
+		E945859B1DD3267100286B90 /* madlib1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib1.txt; path = ../../../../Downloads/madlibs_ios/madlib1.txt; sourceTree = "<group>"; };
+		E945859C1DD3267100286B90 /* madlib2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib2.txt; path = ../../../../Downloads/madlibs_ios/madlib2.txt; sourceTree = "<group>"; };
+		E945859D1DD3267100286B90 /* madlib3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib3.txt; path = ../../../../Downloads/madlibs_ios/madlib3.txt; sourceTree = "<group>"; };
+		E945859E1DD3267100286B90 /* madlib4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = madlib4.txt; path = ../../../../Downloads/madlibs_ios/madlib4.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +71,15 @@
 			isa = PBXGroup;
 			children = (
 				E92240C51DD0E3A7001C7BD7 /* Story.swift */,
+				E945859A1DD3267100286B90 /* madlib0.txt */,
+				E945859B1DD3267100286B90 /* madlib1.txt */,
+				E945859C1DD3267100286B90 /* madlib2.txt */,
+				E945859D1DD3267100286B90 /* madlib3.txt */,
+				E945859E1DD3267100286B90 /* madlib4.txt */,
 				E92240AF1DD06308001C7BD7 /* AppDelegate.swift */,
 				E92240B11DD06308001C7BD7 /* ViewController.swift */,
-				E92240C11DD07B93001C7BD7 /* inputViewController.swift */,
 				E92240C31DD0DB99001C7BD7 /* StoryViewController.swift */,
+				E92240C11DD07B93001C7BD7 /* inputViewController.swift */,
 				E92240B31DD06308001C7BD7 /* Main.storyboard */,
 				E92240B61DD06308001C7BD7 /* Assets.xcassets */,
 				E92240B81DD06308001C7BD7 /* LaunchScreen.storyboard */,
@@ -133,7 +148,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92240BA1DD06308001C7BD7 /* LaunchScreen.storyboard in Resources */,
+				E94585A21DD3267100286B90 /* madlib3.txt in Resources */,
+				E94585A01DD3267100286B90 /* madlib1.txt in Resources */,
 				E92240B71DD06308001C7BD7 /* Assets.xcassets in Resources */,
+				E945859F1DD3267100286B90 /* madlib0.txt in Resources */,
+				E94585A11DD3267100286B90 /* madlib2.txt in Resources */,
+				E94585A31DD3267100286B90 /* madlib4.txt in Resources */,
 				E92240B51DD06308001C7BD7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +331,7 @@
 				E92240C01DD06308001C7BD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
