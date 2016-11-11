@@ -22,49 +22,51 @@ class inputViewController: UIViewController {
     @IBOutlet weak var nextView: UIButton!
     @IBOutlet weak var inputCounter: UILabel!
     
-    
     @IBAction func nextWordPress(_ sender: Any) {
         
-        if (wordsInputField.placeholder == "") {
+        // If input is filled in, safe input and get the right inputCounter.
+        if (wordsInputField.text == "") {
             return
         }
         else {
             story.fillInPlaceholder(word: wordsInputField.text!)
             
             if (story.getPlaceholderRemainingCount() < 2) {
-                inputCounter.text = "last word"
+                inputCounter.text = "Almost done!"
             }
             else {
                 inputCounter.text = String(story.getPlaceholderRemainingCount()) + " words left"
             }
             
+            // Empty field
             wordsInputField.text = ""
             wordsInputField.placeholder = story.getNextPlaceholder()
             
-            // if all input is filled in, change the 4 ellements
+            // If all input is filled in, change the 4 ellements.
             if (wordsInputField.placeholder == "") {
-                inputCounter.text = "You are done! Click 'go to story' to see the story"
+                inputCounter.text = "You are done! Click 'go to story!' to see the story!"
                 nextView.isHidden = false
                 wordsInputField.isHidden = true
                 nextWord.isHidden = true
-        }
-
+            }
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        // Hidde button to next view
+        // Hidde button to next view.
         nextView.isHidden = true
         
-        
+        // Get the title of the file the and location of file to load.
         let rand = arc4random_uniform(5)
-        let randStory = String(rand)
         let randTitle = Int(rand)
+        let filesNames = ["Simple", "Tarzan", "University", "Clothes", "Dance"]
+        storyTitle = filesNames[randTitle]
+        let randStory = String(rand)
         let storyName = "madlib" + randStory
         let locationFile = Bundle.main.path(forResource: storyName, ofType: "txt")
-        
+
+        // If the file not is loadable print a error
         do {
             textStory = try String(contentsOfFile: locationFile!)
             story = Story(stream: textStory!)
@@ -73,10 +75,6 @@ class inputViewController: UIViewController {
         } catch {
             print("Could not read file")
         }
-        
-        let filesNames = ["Simple", "Tarzan", "University", "Clothes", "Dance"]
-        storyTitle = filesNames[randTitle]
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,6 +82,7 @@ class inputViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Segue to send all words and the story title to the next field.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         finalStory = story.toString()

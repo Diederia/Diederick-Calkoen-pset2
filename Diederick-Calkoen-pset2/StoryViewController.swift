@@ -14,15 +14,13 @@ class StoryViewController: UIViewController {
     var name: String?
     
     @IBOutlet weak var storyName: UILabel!
-
     @IBOutlet weak var storyField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        // Set the right title and fill in the full story
         storyName.text = name! + " story"
-        
         storyField.text = words
     }
 
